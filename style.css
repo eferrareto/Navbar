@@ -1,77 +1,54 @@
 body{
-    background-color:rgba(127, 255, 212, 0.719) ;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+header{
     position: relative;
-    top: 10px;
-    text-align: center;
-}
-nav{
-    background-color: #161616;
-    margin: 0;
     padding: 10px;
-    text-align: center;
-    justify-content: space-between;
+    background-color: rgba(0, 0, 255, 0.411);
 }
-button{
-    position: absolute;
-    right: 10px;
-    top: 0;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    height: 30px;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-h1, p{
-    color: #fff;
-}
-nav, ul{
-    display: flex;
-    flex-direction: row;
+a{
+    position: relative;
+    left: -10px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.596);
+    color: #000;
 }
 ul{
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
+    position: absolute;
+    top: -18px;
+    right: 0;
 }
 li{
     cursor: pointer;
-    padding: 0 20px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.596);
+    list-style: none;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
 }
 li:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-    opacity: 0.8;
+    color: #fff;
+    background-color: rgba(90, 89, 89, 0.637);
 }
-button:hover{
-    transform: rotateX(30deg);
-} 
-button:focus ~ ul{
-    height: 200px;
+div{
+    width: auto;
+    height: 400px;
 }
-@media (max-width: 700px){
-    nav, ul{
-        flex-direction: column;
-        align-items: 7;
-    }
-    h1{
-        top: auto;
-        margin: 0;
-    }
-    nav{
-        padding: 0;
-        padding: 10px;
-    }
-    ul{
-        transition: 0.5s;
-        margin: 0;
-        height: 0;
-        text-align: center;
-    }
-    button{
-        display: flex;
-    }
+h1{
+    text-align: center;
+}
+.amarelo{
+    background-color: #FFDF24;
+}
+.verde{
+    background-color: #30FF94 ;
+}
+.rosa{
+    background-color: #FF6857;
+}
+.blue{
+    background-color: #3A24FF;
 }
